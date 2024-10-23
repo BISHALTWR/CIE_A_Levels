@@ -286,3 +286,37 @@ for i in range(5,0,-1): # Guess what this displays
     print(i)
 ```
 
+- While loop:
+```py
+a=0
+while(a<10): # The loop runs as long as a<10
+    print(a)
+    a=a+1
+```
+> This displays numbers 0,1,2...9
+
+---
+
+## File Handling
+
+- Python can work with text files and binary files. We will work with text files only.
+
+- Opening a file:
+    - `open()` function is used.
+    - Needs at least two arguments: filename and mode.
+        - Filename: String
+        - mode: 'r' for read, 'w' for write, 'a' for append.
+            - read mode can be used to read contents from file.
+            - write mode can be used to write contents to file. (Replaces old content)
+            - append mode can be used to add contents at the end of existing contents.
+
+- Try:
+```py
+file1 = open("rough.txt", 'w')
+prin(type(file1)) # This is also object
+file1.close()
+```
+
+> This creates a new file `rough.txt` in current working directory if it doesn't exist already.
+
+> You should close file after your work with the file is done.
